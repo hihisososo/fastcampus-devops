@@ -75,3 +75,23 @@
     
 ### 1.7 (VPC) VPC 와 Private, Public Subnet 만들기
 * 새로운 VPC 와 그에 대한 public, private subnet 생성
+  
+### 1.8 (VPC) Internet Gateway과 라우팅 테이블 생성
+* 인터넷 게이트웨이(IGW) 생성
+* public subnet 의 라우팅 테이블을 추가하여 IGW 에 연결될 수 있도록 설정
+
+### 1.9~10 (VPC) NACL 설정하기
+* AWS 의 네트워크 보안은 NACL 이나, Security Group 을 통해 설정한다. NACL 은 stateless, Secytiry Group 은 Stateful 하다
+* stateful : 서버 outbound 설정이 전부 막혀있어도, inbound 로 온 요청에 대한 응답 outbound 는 허용
+* stateless : 서버 outbound 설정이 전부 막혀있으면, outbound 미허용
+* fastcampus-vpc 의 각 public, private subnet 에 NACL 을 통해 인/아웃바운드 설정
+* public, private subnet 에 EC2 인스턴스 추가
+
+### 1.11 (VPC) Bastion Host 만들기
+* public/private ec2 를 만들고 public ec2 -> private ec2 로 ssh 접속해본다
+* Bastion Host 는 따로 만드는 것은 아니고, 개념적으로 우회접속 할 때 사용하는 말인것으로 보임
+
+### 1.12 (VPC) NAT Gateway 만들기
+* private ec2 에서, 외부로 나가는 접속을 허용해주기 위해, NAT 게이트웨이를 public ec2에 만들고, private ec2 는 라우팅 테이블을 통해 NAT 게이트웨이를 보게 만든다.
+
+### 1.13 (VPC) NAT Gateway 만들기
