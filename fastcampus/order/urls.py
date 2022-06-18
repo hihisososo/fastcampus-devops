@@ -1,7 +1,6 @@
 from django.urls import path
-from order
+from order import views
 
 urlpatterns = [
-    path('shops/', models.),
-    path('snippets/<int:pk>/', views.snippet_detail),
+    path('shops/', views.shop)
 ]
