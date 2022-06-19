@@ -138,3 +138,5 @@
 * 주문자, 배달기사, 사장님 별 app 을 따로 개발
 
 ### 2.9 (백엔드) Models 제작
+* manage.py 를 통해 DB 를 생성하고 스키마를 migration
+* 주문 GET, POST 요청에 대한 응답 구성 및 csrf 토큰 추가 
