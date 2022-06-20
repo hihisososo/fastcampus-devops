@@ -139,4 +139,8 @@
 
 ### 2.9 (백엔드) Models 제작
 * manage.py 를 통해 DB 를 생성하고 스키마를 migration
-* 주문 GET, POST 요청에 대한 응답 구성 및 csrf 토큰 추가 
+* 주문 GET, POST 요청에 대한 응답 구성 및 csrf 토큰 추가
+
+### 2.10 (백엔드) Order 백엔드 개발1
+* 사용자에게 보여줄 shop list, menu list html 생성
+* 이벤트를 통해 shop list -> menu list 이동 동작 추가
