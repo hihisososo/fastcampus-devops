@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'order',
+    'boss',
     'rest_framework',
     'serializers'
 ]

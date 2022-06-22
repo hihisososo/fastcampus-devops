@@ -3,10 +3,10 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 
-from .models import Menu, Order
-from .models import Shop
-from .serializers import MenuSerializer
-from .serializers import ShopSerializer
+from order.models import Menu, Order
+from order.models import Shop
+from order.serializers import MenuSerializer
+from order.serializers import ShopSerializer
 
 
 @csrf_exempt
