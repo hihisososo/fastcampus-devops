@@ -55,7 +55,8 @@ INSTALLED_APPS = [
     'order',
     'boss',
     'rest_framework',
-    'serializers'
+    'serializers',
+    'delivery'
 ]
 
 MIDDLEWARE = [
