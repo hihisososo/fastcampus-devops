@@ -96,10 +96,10 @@ WSGI_APPLICATION = 'fastcampus.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME' : 'project1',
+        'NAME' : 'test',
         'USER': 'admin',
         'PASSWORD' : 'abcde12345',
-        'HOST' : 'database-2.clrbq8m0eg1s.ap-northeast-2.rds.amazonaws.com',
+        'HOST' : 'database-1.clrbq8m0eg1s.ap-northeast-2.rds.amazonaws.com',
         'PORT' : '3306',
         'OPTIONS' : {
             'init_command' : "SET sql_mode='STRICT_TRANS_TABLES'"
