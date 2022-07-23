@@ -41,7 +41,7 @@ SECRET_KEY = "@o&=0wd$n3undsjh@$r0p6fsqslkh5bl8mm-t@3@ritinkrd42"
 DEBUG = True
 
 ALLOWED_HOSTS = ['ec2-3-34-190-219.ap-northeast-2.compute.amazonaws.com',
-                 '172.31.43.201']
+                 'elb-1168980036.ap-northeast-2.elb.amazonaws.com']
 
 
 # Application definition
