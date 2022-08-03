@@ -42,7 +42,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['ec2-3-35-11-206.ap-northeast-2.compute.amazonaws.com',
                  '172.31.43.201',
-                 '172.31.47.82']
+                 '172.31.47.82',
+                 'elb-1168980036.ap-northeast-2.elb.amazonaws.com']
 
 
 # Application definition
