@@ -187,3 +187,9 @@
 로드밸런싱 하는 곳에 세션을 저장하는 방법
 * Target Group 을 두개 생성한 뒤, ALB 의 규칙을 통해 /delivery 는 특정 그룹, 그 외의 path 는 다른 
 그룹으로 밸런싱 되게 하는 설정 적용
+
+### 2.21 (인프라) AWS Route53 과 DNS 의 동작원리
+* 도메인 등록 절차 : 등록자 -> 등록 대행자(가비아 등) -> 등록소(.com, .... 등 end url 에 따라 다름) -> ICANN
+* 도메인 질의 절차 : fast-devops.com -> ICANN(root name server) -> .com 에 해당하는 등록소로 질의 -> 
+등록소에서 ip 조회 -> ICANN 으로 다시 보냄 -> 등록자
+* AWS Route53 은 등록대행자의 역할을 함
