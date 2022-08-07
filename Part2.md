@@ -193,3 +193,4 @@
 * 도메인 질의 절차 : fast-devops.com -> ICANN(root name server) -> .com 에 해당하는 등록소로 질의 -> 
 등록소에서 ip 조회 -> ICANN 으로 다시 보냄 -> 등록자
 * AWS Route53 은 등록대행자의 역할을 함
+

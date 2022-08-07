@@ -40,10 +40,7 @@ SECRET_KEY = "@o&=0wd$n3undsjh@$r0p6fsqslkh5bl8mm-t@3@ritinkrd42"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-3-35-11-206.ap-northeast-2.compute.amazonaws.com',
-                 '172.31.43.201',
-                 '172.31.47.82',
-                 'elb-1168980036.ap-northeast-2.elb.amazonaws.com']
+ALLOWED_HOSTS = ['hihisososo.link']
 
 
 # Application definition
