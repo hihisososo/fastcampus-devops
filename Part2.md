@@ -194,3 +194,8 @@
 등록소에서 ip 조회 -> ICANN 으로 다시 보냄 -> 등록자
 * AWS Route53 은 등록대행자의 역할을 함
 
+### 2.22 (인프라) AWS Route53 도메인 등록과 Hosted zone 설정하기
+* 도메인을 hihisososo.link 로 구매
+* 해당 도메인을 ALB 에 연결시켜 접속 되는지 확인
+
+
