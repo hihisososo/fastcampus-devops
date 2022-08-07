@@ -201,3 +201,11 @@
 ### 2.23 (인프라) AWS Route53 DNS 기반 인증서 발급과 ALB에 https 설정하기
 * Certificate manager 를 통해 인증서 발급 
 * ALB 에 인증서를 추가해서 https 접속이 가능하게 설정
+
+### 2.24 (인프라) AWS CloudFront 와 CDN의 동작원리
+* Cloudfront : Cache(메인) + CDN(부가)
+* 웹 서버의 비용을 감소시킴, 전 세계의 유저를 대상으로 고속으로 웹 서비스를 제공할 수 있음
+* 중간 캐시 서버를 둬서 캐시 데이터에서 먼저 질의하는 방식
+* CDN(Content Dlivery Network)
+  1. 전 세계 어느 위치에서 접속하더라도 빠른 속도로 서비스할 수 있도록 하는 서비스
+  2. 전 세계에 흩어져 있는 Edge Location(캐시 서버)을 활용
