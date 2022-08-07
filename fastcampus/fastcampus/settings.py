@@ -40,7 +40,7 @@ SECRET_KEY = "@o&=0wd$n3undsjh@$r0p6fsqslkh5bl8mm-t@3@ritinkrd42"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hihisososo.link']
+ALLOWED_HOSTS = ['hihisososo.link', 'www.hihisososo.link']
 
 
 # Application definition
