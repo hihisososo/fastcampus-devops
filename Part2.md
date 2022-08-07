@@ -198,4 +198,6 @@
 * 도메인을 hihisososo.link 로 구매
 * 해당 도메인을 ALB 에 연결시켜 접속 되는지 확인
 
-
+### 2.23 (인프라) AWS Route53 DNS 기반 인증서 발급과 ALB에 https 설정하기
+* Certificate manager 를 통해 인증서 발급 
+* ALB 에 인증서를 추가해서 https 접속이 가능하게 설정
