@@ -218,3 +218,14 @@
 ### 2.26 (인프라) 어플리케이션 구동 (Nginx, Gunicorn, Supervisor)
 * Nginx : Web Server 이며 응답시간이 빠른 웹 서버
 * EC2 인스턴스에 nginx 설치한 뒤, 스냅샷을 만들어서(오토스케일링 준비작업) 새로운 인스턴스 시작 후 접속 확인
+
+### 2.27. (인프라) 오토스케일링 설정 (AWS Autoscaling Group 와 AMI)
+* 오토스케일링 : 자동적으로 어떤 특정 조건에 따라 서버 증설/줄임
+* 오토스케일링 설정 프로세스 
+    1. 서버 세팅
+    2. 이미지 생성
+    3. 시작 템플릿 생성
+    4. 대상 그룹 생성
+    5. ALB 생성
+    6. Auto Scaling 그룹 생성
+* nginx 인스턴스 및 ELB 생성 후 Autoscanling 그룹 생성
