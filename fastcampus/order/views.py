@@ -2,7 +2,7 @@ from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
-
+from user.models import User
 from order.models import Menu, Order
 from order.models import Shop
 from order.serializers import MenuSerializer
@@ -12,9 +12,14 @@ from order.serializers import ShopSerializer
 @csrf_exempt
 def shop(request):
   if request.method == 'GET':
-    shop = Shop.objects.all();
-    return render(request, 'order/shop_list.html', {'shop_list': shop});
-
+    try:
+      if User.objects.all().get(id=request.session['user_id']).user_type == 0:
+        shop = Shop.objects.all();
+        return render(request, 'order/shop_list.html', {'shop_list': shop});
+      else:
+        return render(request, 'order/fail.html')
+    except:
+      return render(request, 'order/fail.html')
   elif request.method == 'POST':
     data = JSONParser().parse(request)
     serializer = ShopSerializer(data=data)
